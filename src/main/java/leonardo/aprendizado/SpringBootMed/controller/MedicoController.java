@@ -44,6 +44,7 @@ public class MedicoController {
     public void excluisaoLogica(@PathVariable Long id){
         var medico = repository.getReferenceById(id);
         medico.excluir();
+        System.out.println("ora");
     }
 
 }
